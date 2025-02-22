@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED MTR</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script defer src="script.js"></script> -->
+
+</head>
+<body>
+    <nav class="navbar">
+        <div  class="logo-container">
+            <img width ="200" src="imagas/Logo.png" alt="Logo" class="globe-logo">
+        </div>
+         <!-- <button class="menu-toggle" id="menuToggle">☰</button>  -->
+         <button class="menu-toggle" id="menuToggle">&#9776;</button>
+         <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="weDo.html"  class="nav-link">Work</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="gallery.html" class="nav-link">Gellery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+ 
+        <!-- <button class="language-toggle lang-btn">🌍EN/DE</button> -->
+    </nav>
+    
+    <section class="video-section">
+        <video autoplay loop muted>
+            <source src="imagas/video_A.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video>
+    </section>
+    <!-- About us section start -->
+    <!-- <header>
+      <h1>Über Uns</h1>
+      
+  </header> -->
+  <script>
+    // function toggleFAQ(element) {
+    //     const answer = element.nextElementSibling;
+    //     answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    // }
+
+    // Highlight active nav link and keep it active
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function setActiveLink() {
+        const currentHash = window.location.hash;
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === currentHash);
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            window.location.hash = this.getAttribute('href');
+            setActiveLink();
+        });
+    });
+
+    window.addEventListener('DOMContentLoaded', setActiveLink);
+    window.addEventListener('hashchange', setActiveLink);
+</script>
+  <!--  -->
+  <section class="about about-section">
+      <div class="container">
+          <div class="image">
+              <img src="imagas/aboutUs.png" alt="About Us">
+          </div>
+          <div class="content">
+              <h2>Über Uns</h2>
+              <p>LED-MTR: Ihr Experte für LED-Reparaturen in Baden-Württemberg
+                LED-MTR, unter dem Namen Hussain Alsaeed tätig, ist Ihr zuverlässiger Partner in Esslingen für die Reparatur von LED-Modulen und LED-Wänden.</p>
+              <p>Unsere Erfahrung - Ihr Vorteil
+                Dank unserer langjährigen Erfahrung in LED-Wände Reparaturen und -installationen arbeiten wir eng mit führenden LED-Wändeherstellern wie Infeled, Absen, DigiLED, Unilumin, Leyard usw.</p>
+              <button onclick="showMore()">Read More</button>
+              <p id="extraText" class="hidden">zusammen:
+                Dadurch können wir Reparaturdienste und technischen Support sowohl vor Ort als auch in unserem Servicecenter anbieten.
+                Schnelle und effiziente Reparaturen
+                Haben Sie genug von langen Wartezeiten auf Reparaturen durch den Hersteller? Wir bieten Ihnen einen schnellen, hochwertigen und lokalen Reparaturservice für LED-Module, der Ihre Erwartungen übertrifft.
+                Unser Leistungsspektrum:
+                Unser Reparaturdienst für LED-Module umfasst:
+                Austausch defekter Pixel
+                Reparatur und Austausch von IC-Chips
+                Fehlerbehebung vor Ort
+                und vieles mehr
+                Modulvielfalt:
+                Wir reparieren Module mit Pixelabständen von 0,6 m, 0,9 m, 1,2 mm, 1,5 mm, 
+                1,9 mm, 2,5 mm, 3,9 mm, 4,8 mm, 5 mm, 6 mm, 8 mm, 10 mm bis 16 mm..</p>
+          </div>
+      </div>
+  </section>
+    <!-- About us section end -->
+    <!-- ***** -->
+
+    <!-- video same screen start -->
+    <header>
+      <div class="linlAllVidoeButton">
+        <a href="#all-videos" class="btn">View All Videos</a>
+     </div>
+      <!-- <h1>Our Video Gallery</h1> -->
+  </header>
+  
+  <section class="video-gallery" id="all-videos">
+    
+      <div class="video-container">
+          <iframe src="homevideo/homeA.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+          <iframe src="homevideo/homeB.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+          <iframe src="homevideo/homeC.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="homevideo/homeE.mp4" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="homevideo/homeF.mp4" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="homevideo/homeG.mp4" allowfullscreen></iframe>
+    </div> <div class="video-container">
+      <iframe src="homevideo/homeH.mp4" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+      <iframe src="homevideo/homeIJ.mp4" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+      <iframe src="homevideo/homeK.mp4" allowfullscreen></iframe>
+  </div> <div class="video-container">
+    <iframe src="homevideo/homeL.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe src="homevideo/homeM.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe src="homevideo/homeN.mp4" allowfullscreen></iframe>
+</div> <div class="video-container">
+  <iframe src="homevideo/homeOP.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+  <iframe src="homevideo/homeQ.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+  <iframe src="homevideo/homeC.mp4" allowfullscreen></iframe>
+</div>
+  </section>
+    <!-- video same screen end -->
+  
+
+  <section class="brands">
+    <h2>Our Partners</h2>
+  </section>
+
+      
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <!-- Sample FAQ Items (duplicate as needed for 25+ items) -->
+      <div class="faq-item" data-question="What is your return policy?" data-answer="Our return policy lasts 30 days from the date of purchase. Items must be in original condition.">
+        <h3 class="faq-question">Q1: What is your return policy?</h3>
+      </div>
+      <div class="faq-item" data-question="How long does shipping take?" data-answer="Shipping typically takes 5-7 business days depending on your location.">
+        <h3 class="faq-question">Q2: How long does shipping take?</h3>
+      </div>
+      <div class="faq-item" data-question="Do you ship internationally?" data-answer="Yes, we ship to most countries worldwide. Shipping charges and times may vary.">
+        <h3 class="faq-question">Q3: Do you ship internationally?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I track my order?" data-answer="Once your order ships, you will receive an email with a tracking number.">
+        <h3 class="faq-question">Q4: How can I track my order?</h3>
+      </div>
+      <div class="faq-item" data-question="What payment methods do you accept?" data-answer="We accept all major credit cards, PayPal, and Apple Pay.">
+        <h3 class="faq-question">Q5: What payment methods do you accept?</h3>
+      </div>
+      <div class="faq-item" data-question="Can I cancel my order?" data-answer="Orders can be canceled within 2 hours of placement. After that, we cannot guarantee cancellation.">
+        <h3 class="faq-question">Q6: Can I cancel my order?</h3>
+      </div>
+      <div class="faq-item" data-question="How do I contact customer support?" data-answer="You can contact us via our Contact page or call our support hotline at 123-456-7890.">
+        <h3 class="faq-question">Q7: How do I contact customer support?</h3>
+      </div>
+      <div class="faq-item" data-question="What is your privacy policy?" data-answer="Our privacy policy is available on our website. We take your privacy seriously.">
+        <h3 class="faq-question">Q8: What is your privacy policy?</h3>
+      </div>
+      <div class="faq-item" data-question="Do you offer discounts for bulk orders?" data-answer="Yes, please contact our sales team for bulk order discounts and custom pricing.">
+        <h3 class="faq-question">Q9: Do you offer discounts for bulk orders?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I update my order details?" data-answer="To update your order details, please log in to your account and visit the 'My Orders' section.">
+        <h3 class="faq-question">Q10: How can I update my order details?</h3>
+      </div>
+      <!-- Add additional FAQ items here -->
+      <div class="faq-item" data-question="Do you offer discounts for bulk orders?" data-answer="Yes, please contact our sales team for bulk order discounts and custom pricing.">
+        <h3 class="faq-question">Q9: Do you offer discounts for bulk orders?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I update my order details?" data-answer="To update your order details, please log in to your account and visit the 'My Orders' section.">
+        <h3 class="faq-question">Q10: How can I update my order details?</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for FAQ Details -->
+  <div id="faqModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalQuestion"></h3>
+      <p id="modalAnswer"></p>
+    </div>
+  </div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Home</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>History</h4>
+        <ul>
+          <li><a href="history.html">Our History</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 designed & developed by M.Nabi SoftOutlet Metzingen. All rights reserved.</p>
+    </div>
+  </footer>
+  
+    <!-- <script defer src="script.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

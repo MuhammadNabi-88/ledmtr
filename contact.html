@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LED MTR</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contactStyle.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img width="200" src="imagas/Logo.png" alt="Logo" class="globe-logo" />
+      </div>
+      <!-- <button class="menu-toggle" id="menuToggle">☰</button>  -->
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="weDo.html" class="nav-link">Work</a></li>
+        <li><a href="history.html" class="nav-link">History</a></li>
+        <li><a href="gallery.html" class="nav-link">Gellery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- <button class="language-toggle lang-btn">🌍EN/DE</button> -->
+    </nav>
+    <!-- *************** -->
+    <div class="container">
+      <div class="header">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Mobile Number:</strong> +123-456-7890</p>
+          <p><strong>Telephone Number:</strong> +098-765-4321</p>
+          <p><strong>Home Address:</strong> 123 Main Street, City, Country</p>
+        </div>
+        <img
+          src="imagas/bilder/profil.png"
+          alt="My Photo"
+          class="profile-img"
+        />
+        <img
+          src="imagas/bilder/myOffice.jpg"
+          alt="Office Image"
+          class="office-img"
+        />
+      </div>
+<!--  -->
+      
+      <div class="form-section">
+        <h2>Send Us a Message</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie bekomme ich Zugriff auf das LED-MTR Serviceportal?
+          </h3>
+          <div class="faq-answer">
+            Der Zugriff auf das LED-MTR Serviceportal ist nur nach erfolgreicher
+            Registrierung sowie Freischaltung durch LED-MTR möglich. Die
+            Anmeldung im LED-MTR Serviceportal erfolgt mit dem übermittelten
+            Benutzernamen und Passwort..
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Kann ich Ersatzteile über das LED-MTR Serviceportal bestellen?
+          </h3>
+          <div class="faq-answer">
+            Die Schadensmeldung erfolgt über unser LED-MTR Serviceportal. Im
+            Anschluss wird das benötigte Ersatzteil innerhalb von 48 Stunden zur
+            Verfügung gestellt.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Kann ich mehrere Schäden in einem melden?
+          </h3>
+          <div class="faq-answer">
+            Jeder Schaden ist einzeln im LED-MTR Serviceportal zu erfassen.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie bewahre ich meine LED-MTR LED-Wand richtig auf?
+          </h3>
+          <div class="faq-answer">
+            Das LED-MTR Serviceportal dient zur direkten Kommunikation mit
+            LED-MTR. Es kann jederzeit der aktuelle Bearbeitungsstatus der
+            offenen Aufträge inklusive aller Details eingesehen werden. Des
+            Weiteren stehen die aktuellsten Versionen für die Empfänger- oder
+            Sendekarten zum Download zur Verfügung. Ebenfalls besteht über das
+            LED-MTR Serviceportal die Möglichkeit, Schäden zu melden.
+            Bestellungen können nicht über das LED-MTR Serviceportal ausgelöst
+            werden.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie schütze ich meine LED-MTR LED-Wand vor Feuchtigkeit?
+          </h3>
+          <div class="faq-answer">
+            LED-MTR LED-Wände für den Outdoorbereich trotzen Wind und Wetter.
+            Nach einem erfolgreichem Einsatz ist es absolut wichtig die
+            LED-Wände vor Feuchtigkeit bei der Lagerung zu schützen. Bevor die
+            einzelnen LED-Module zurück in die jeweiligen Flightcases
+            zurückgehen sollte auf jeden Fall sichergestellt werden, dass sowohl
+            jedes LED-Modul aber auch die Kisten sauber und trocken sind.
+            Feuchtigkeit kann zu Schimmelbildung und anderen Schäden führen.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie transportiere ich meine LED-MTR LED-Wand korrekt?
+          </h3>
+          <div class="faq-answer">
+            Der Transport der einzelnen LED-Module sollte ausschließlich in
+            einem extra dafür vorgesehenen Flightcase erfolgen.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie reinige ich meine LED-MTR LED-Wand?
+          </h3>
+          <div class="faq-answer">
+            LED-MTR LED-Wände sind in ihrem Arbeitsalltag einigen
+            Verschmutzungen ausgesetzt. Wenn auf dem Festival bei Sonnenschein
+            und Trockenheit hunderte von Zuschauerfüßen beim Springen, Tanzen
+            und Pogen Staub aufwirbeln, der dann durch die Lüfte wabert, so
+            bleiben die LED-Wände an den Bühnen davon nicht unberührt. Um die
+            Wände lange und ohne Schwierigkeiten nutzen zu können, bedürfen sie
+            einer sorgsamen Reinigung. Schauen Sie für mehr Informationen gerne
+            auf unserem Blog vorbei. Dort haben wir die wichtigsten Punkte für
+            Sie zusammengefasst.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">Wie tausche ich eine LED-Kachel?</h3>
+          <div class="faq-answer">
+            Das Tauschen einer LED-Kachel kann im Benutzerhandbuch der
+            jeweiligen Serie in dem Kapitel Tauschen einer LED-Kachel
+            nachgelesen werden. Dort wird der Prozess des Austauschs Schritt für
+            Schritt erklärt.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Kann ich LED-MTR LED-Wände verschiedener Generationen miteinander verbinden?
+          </h3>
+          <div class="faq-answer">
+            Es stellt in der Regel keinerlei Probleme dar LED-MTR LED-Module verschiedener Generationen miteinander zu verbinden. 
+            Unsere LED-Module sind so geplant, dass jede Generation einer LED-Wand Serie miteinander harmoniert. 
+            Der Prozess für ein einheitliches Gesamtbild wird in einem unseren Video-Tutorials Schritt für Schritt erklärt
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Kann ich verschieden große LED-MTR LED-Module miteinander verbinden?
+          </h3>
+          <div class="faq-answer">
+            Ja, das Verbinden unterschiedlich großer LED-MTR LED-Module stellt kein Problem dar. 
+            Die Durchführung haben wir in einem Video für euch animiert.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie mache ich ein Firmwareupdate?
+          </h3>
+          <div class="faq-answer">
+            Die Verfahrensweise beim Update der Sender- und Empfängerkarte kann in unserer Anleitung nachgelesen werden. 
+            Auch im Benutzerhandbuch jeder einzelnen Serie oder als Video auf unserem YouTube Kanal finden Sie eine Erklärung.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Wie programmiere ich eine LED-MTR LED-Wand?
+          </h3>
+          <div class="faq-answer">
+            Die Programmierung einer LED-MTR LED-Wand kann im Benutzerhandbuch der jeweiligen LED-MTR Serie oder in 
+            unserem Blog nachgelesen werden, aber ab sofort auch in einer Folge der LED-MTR angeschaut werden.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            Gibt es technische Tipps auch per Video?
+          </h3>
+          <div class="faq-answer">
+            Ja, LED-MTR stellt neue Videos rund um das Thema LED-Wand regelmäßig auch auf YouTube zur Verfügung.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display =
+          answer.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Home</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>History</h4>
+          <ul>
+            <li><a href="history.html">Our History</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 designed & developed by M.Nabi SoftOutlet Metzingen. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
