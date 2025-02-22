@@ -508,8 +508,8 @@ header {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
-        padding-right: 240px;
-        margin-top: -40px;
+        padding-right: 318px;
+        margin-top: -55px;
     }
 
     .nav-links {
