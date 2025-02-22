@@ -493,7 +493,7 @@ header {
     }
 
     .nav-links.show {
-        display: flex;
+        display: contents;
     }
 
     .navbar {
